@@ -3,3 +3,37 @@
     height: 3rem;
     border-radius: .75rem;
 }
+
+.myOwn-white-font{
+    color: aliceblue !important;
+}
+
+.myOwn-width100{
+    display: block !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.myOwn-rela{
+    position: relative;
+}
+
+.myOwn-abso{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.carousel.slide.myOwn-abso{
+    z-index: -1;
+}
+
+
+
+
+
+
+@media all and (max-width:770px) {
+    .myOwn-dis-no-mobile{
+        display: none;
+    }
+}
