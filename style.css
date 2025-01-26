@@ -27,12 +27,26 @@
     z-index: -1;
 }
 
+.myOwn-j-c-c{
+    justify-content: center;
+}
+.myOwn-t-a-c{
+    text-align: center;
+}
+
+.myOwn-rel-to-lf{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+
+}
 
 
 
 
 
-@media all and (max-width:770px) {
+@media all and (m-width :770px){
     .myOwn-dis-no-mobile{
         display: none;
     }
