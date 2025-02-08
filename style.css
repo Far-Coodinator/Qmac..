@@ -25,6 +25,11 @@ section{
     max-width: 1300px;
     margin: auto;
 }
+.myOwn-margin-au{
+    display: block;
+    margin: auto;
+}
+
 #hero{
     height: calc(100vh - 50px );
 }
@@ -123,6 +128,12 @@ section.blueBg{
     justify-content: center;
     align-items: center;
 }
+.myOwn-flex-direction{
+    flex-direction: column;
+}
+.myOwn-wrap{
+    flex-wrap: wrap;
+}
 .myOwn-t-a-c{
     text-align: center;
 }
@@ -163,29 +174,96 @@ section.blueBg{
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }
-.myOwn-card{
-    position: relative;
-  }
+
+/* review box styles */
   .myOwn-pic-reviewer{
     width: 50px;
     position: absolute;
-    right: 2px;
-    top: 2px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 50%;
   }
   .myOwn-pic-reviewer img{
     width: 100% !important;
     border-radius: 50%;
-  }
+  }  
 
-  .myOwn-review-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-  }
-  .myOwn-review-container .myOwn-card{
-    width: 40% !important;
-  }
+.card-body{
+    padding-top: 1.5rem;
+}
+.card-text{
+    font-size: .85rem;
+}
+.myOwn-reivew-stars{
+    font-size: .8rem;
+}
+
+.myOwn-review-wraper{
+    width: 100%;
+    height: 255px;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 20% ,
+        rgba(0,0,0,1) 80%,
+        rgba(0,0,0,0)
+    );
+}
+.myOwn-card{
+    text-align: center;
+    width: 200px !important;
+    height: 210px !important;
+    position: absolute;
+    top: 40px;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.myOwn-review-wraperToLeft .myOwn-card{
+    animation-name: review-box-animation;
+    left: max(calc(200px * 6),100%);
+}
+.myOwn-review-wraperToRight .myOwn-card{
+    animation-name: review-box-animationToRight;
+    right: max(calc(200px * 6),100%);
+}
+
+
+@keyframes review-box-animation {
+    to{
+        left: -200px;
+    }
+}
+
+@keyframes review-box-animationToRight {
+    to{
+        right: -200px;
+    }
+}
+
+
+.myOwn-card-1{
+    animation-delay: calc(30s / 6 * (6 - 1) * -1) !important;
+    
+}
+.myOwn-card-2{
+    animation-delay: calc(30s / 6 * (6 - 2) * -1) !important;
+}
+.myOwn-card-3{
+    animation-delay: calc(30s / 6 * (6 - 3) * -1) !important;
+}
+.myOwn-card-4{
+    animation-delay: calc(30s / 6 * (6 - 4) * -1) !important;
+}
+.myOwn-card-5{
+    animation-delay: calc(30s / 6 * (6 - 5) * -1) !important;
+}
+.myOwn-card-6{
+    animation-delay: calc(30s / 6 * (6 - 6) * -1) !important;
+}
 
 
 @keyframes appear {
@@ -199,6 +277,15 @@ section.blueBg{
     }
 }
 
+
+/* contact us section */
+.myOwn-contactBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 
 @media all and (max-width:770px){

@@ -1,6 +1,6 @@
 
-// Initialize the map (Center: New York)
-var map = L.map('map').setView([25.311898201282116, 51.31604007799217], 10);
+// Initialize the map (Center: Qatar)
+var map = L.map('map').setView([25.311898201282116, 51.31604007799217], 9);
 
 // Load OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
