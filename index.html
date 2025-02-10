@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +31,7 @@
           <li class="myOwn-display-none-mob px-3"><a href="#features" class="myOwn-nav-anchor myOwn-transition-duration myOwn-j-c-c">Features</a></li>
           <li class="myOwn-display-none-mob px-3"><a href="#services" class="myOwn-nav-anchor myOwn-transition-duration myOwn-j-c-c">Services</a></li>
           <li class="myOwn-display-none-mob px-3"><a href="#special-services" class="myOwn-nav-anchor myOwn-transition-duration myOwn-j-c-c">Speacil Service</a></li>
-          <li class="myOwn-display-none-mob px-3"><a href="" class="myOwn-nav-anchor myOwn-transition-duration myOwn-j-c-c">Contact Us</a></li>
+          <li class="myOwn-display-none-mob px-3"><a href="#contact" class="myOwn-nav-anchor myOwn-transition-duration myOwn-j-c-c">Contact Us</a></li>
           <li class="myOwn-j-c-c myOwn-transition-duration myOwn-slid-nav-door px-3"><i class="fa-solid fa-bars"></i></li>
 
         </ul>
@@ -59,15 +59,15 @@
               <span class="d-inline-block bg-info rounded-circle p-1"></span>
               Why choose us
             </a></li>
-            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#current-service">
               <span class="d-inline-block bg-info rounded-circle p-1"></span>
-              current projects
+              Current projects
             </a></li>
-            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+            <!-- <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
               <span class="d-inline-block bg-info rounded-circle p-1"></span>
               All previues projects
-            </a></li>
-            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
+            </a></li> -->
+            <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#contact">
               <span class="d-inline-block bg-info rounded-circle p-1"></span>
               Contact us
             </a></li>
@@ -304,7 +304,7 @@
       </div>
     </section>
 
-    <section id="current-service " class="bg-body-tertiary my-1">
+    <section id="current-service" class="bg-body-tertiary my-1">
       <div class="my-2">
         <div class="p-1 text-center">
           <div class="container py-5">
@@ -316,8 +316,8 @@
       </div>
     </section>
 
-    <section id="clint-review" class="blueBg">
-      <div class="container my-5">
+    <section id="clint-review" class="blueBg py-1">
+      <div class="container my-2">
         <div class="pt-5 pb-1 text-center">
           <h1 class="text-body-emphasis">What Our Clients Say About Us</h1>
           <p class="lead">
@@ -468,10 +468,10 @@
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
+    <section id="contact" class="">
+      <div class="container py-2">
         <h1 class="text-body-emphasis myOwn-animation myOwn-t-a-c">Get in touch with us now</h1>
-        <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="row flex-lg-row align-items-center g-5 my-1">
           <div class="col-lg-6">
             <img src="./assets/images/main pics/istockphoto-635866434-1024x1024.jpg" class="img-fluid" alt="...">
           </div>
@@ -506,13 +506,63 @@
       </div>
     </section>
 
+    <section id="footer" class="bg-body-tertiary">
+      <div class="container">
+        <footer class="py-5">
+          <div class="myOwn-disFlex-around myOwn-wrap">
+      
+            <div class="mb-3">
+              <h5>Contact now</h5>
+              <ul class="">
+                <li class="myOwn-ul-t-d">Genral Manager:<span class="text-primary pl-1 myOwn-margin-au myOwn-contact-link" id="gm">Mr.jhon Methew</span></li>
+                <li class="myOwn-ul-t-d">Human Resours dept:<span class="text-primary myOwn-margin-au myOwn-contact-link" id="hr">Mr.Michel</span></li>
+                <li class="myOwn-ul-t-d">Operation Manager:<span class="text-primary myOwn-margin-au myOwn-contact-link" id="om">Mr.Dhanoge Mogan</span></li>
+              </ul>
+            </div>
+      
+            <div class="mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2 myOwn-j-c-c">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control my-0" placeholder="Email address">
+                  <button class="btn btn-primary myOwn-button" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2025 Qamac internatinal cleaning & trading company. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+
 
 
 
     
 
 
-
+    <div class="alert-box bg-secondary bg-opacity-25 myOwn-j-c-c">
+      <div class="modal-content rounded-3 shadow bg-white myOwn-alert-miniBox">
+        <div class="modal-body p-3 text-center">
+          <h5 class="mb-2 myOwn-alert-personName"></h5>
+          <p class="mb-0  myOwn-alert-position"></p>
+        </div>
+        <div class="modal-footer flex-nowrap p-0 border-top">
+          <a href="" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <a href="" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0"><i class="fa-solid fa-phone"></i> Call Now</a>
+        </div>
+      </div>
+    </div>
 
 
     

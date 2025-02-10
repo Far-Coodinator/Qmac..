@@ -48,6 +48,11 @@ section.blueBg{
     justify-content: space-between;
 }
 
+.myOwn-disFlex-around{
+    display: flex;
+    justify-content: space-around;
+}
+
 .myOwn-white-font{
     color: aliceblue !important;
 }
@@ -285,6 +290,29 @@ section.blueBg{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.myOwn-button{
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
+
+/* alert box */
+.alert-box{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+.myOwn-alert-miniBox{
+    width: 300px;
+}
+.myOwn-contact-link{
+    cursor: pointer;
 }
 
 
