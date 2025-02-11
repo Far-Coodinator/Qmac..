@@ -13,24 +13,29 @@ $('#footer .myOwn-contact-link').on('click',function(){
 
 
 function callBlock(id){
-    // $('.alert-box').css('display','block')
     $('.alert-box').css('display','flex')
+    const personName = $('.myOwn-alert-personName')
+    const personposition = $('.myOwn-alert-position')
+    const callButton = $('.myOwn-call-button')
+    const whatsAppButton = $('.myOwn-whatsApp-button')
     switch (id) {
         case "gm":
-            $('.myOwn-alert-personName').text('Mr.Jhon Methew')
-            $('.myOwn-alert-position').text('Genral Manger of Qmac international cleaning and trading company')
-            console.log('execute -1 ')
+            personName.text('Mr.Jhon Methew')
+            personposition.text('Genral Manger of Qmac international cleaning and trading company')
+            callButton.attr('href','tel:+97447586943')
+            whatsAppButton.attr('href','https://wa.me/+97474020623')
             break;
         case "hr":
-            $('.myOwn-alert-personName').text('Mr.Michel')
-            $('.myOwn-alert-position').text('Human Resourse Manager of Qmac international cleaning and trading company')
-            console.log('execute -2')
+            personName.text('Mr.Michel')
+            personposition.text('Human Resourse Manager of Qmac international cleaning and trading company')
+            callButton.attr('href','tel:+97447586943')
+            whatsAppButton.attr('href','https://wa.me/+97474020623')
             break;
         case "om":
-            $('.myOwn-alert-personName').text('Mr.Dhanoge Mogan')
-            $('.myOwn-alert-position').text('Operation Manager of Qmac international cleaning and trading company')
-            console.log('execute -3')
-
+            personName.text('Mr.Dhanoge Mogan')
+            personposition.text('Operation Manager of Qmac international cleaning and trading company')
+            callButton.attr('href','tel:+97447586943')
+            whatsAppButton.attr('href','https://wa.me/+97474020623')
         
     }
 
