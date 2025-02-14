@@ -59,3 +59,34 @@ $('.myOwn-darkMode').on('click',()=>{
     }
     
 })
+
+
+// page render 
+const sections = $('.myOwn-pageRender')
+console.log(sections.length)
+document.addEventListener('DOMContentLoaded',()=>{
+
+    let page = 1
+    function lazyload(){
+        const {scrollTop,clientHeight,scrollHeight} = document.documentElement;
+        if(scrollTop + clientHeight >= scrollHeight-1){
+            setTimeout(()=>{
+                loadNextPage(page)
+                page += 1
+            },)
+        }
+    }
+
+    function loadNextPage(sectionNumber) {
+        let section = $(sections[sectionNumber - 1]); // Ensure it's a jQuery object
+        if (sectionNumber-1 <= sections.length) { // Check if element exist
+            $(sections[sectionNumber - 1]).css('display','block').css('margin-top','4px').css('opacity','1')
+            console.log('done')
+        } else {
+            $('body').css('padding-bottom','5vh')
+        }
+    }
+    
+
+    document.addEventListener('scroll',lazyload);
+})

@@ -4,15 +4,11 @@
     --L-lightBlue:rgb(144, 224, 239);
     --L-L-lightBlue:rgb(226, 234, 252);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body{
     scroll-behavior:smooth;
     scrollbar-width: 0px;
+    padding-bottom: 50vh;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -33,7 +29,19 @@ body::-webkit-scrollbar{
 section{
     max-width: 1300px;
     margin: auto;
+    
 }
+
+
+/* page render  */
+.myOwn-pageRender{
+    margin-top: 50vh ;
+    display: none ;
+
+}
+
+
+
 .myOwn-margin-au{
     display: block;
     margin: auto;
@@ -43,14 +51,13 @@ section{
     height: calc(100vh - 50px );
 }
 
-div,p,h1,h2,h3,h4,h5,h6,li,ul,nav,section,input,label,textarea{
+div,li,ul,nav,section{
     transition-duration: .4s !important;
 }
 
 nav{
     position: sticky;
     top: 0px;
-    background-color: var(--darkblue);
     z-index: 10;
 }
 
@@ -189,11 +196,7 @@ nav{
     border: 2px solid black;
 }
 
-.myOwn-animation{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
+
 
 /* review box styles */
   .myOwn-pic-reviewer{
@@ -285,17 +288,6 @@ nav{
     animation-delay: calc(30s / 6 * (6 - 6) * -1) !important;
 }
 
-
-@keyframes appear {
-    from{
-        opacity: .5;
-        scale: .7;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
-}
 
 
 /* contact us section */
