@@ -42,3 +42,20 @@ function callBlock(id){
 
     
 }
+
+
+
+// dark mode
+let dark = false
+$('.myOwn-darkMode').on('click',()=>{
+    $('.myOwn-hero-middleBox').toggleClass('myOwn-dark-color-light-opacity')
+    if(!dark){
+        $('html').attr('data-bs-theme','dark')
+        dark = true
+    } 
+    else{
+        $('html').attr('data-bs-theme','light')
+        dark = false
+    }
+    
+})
